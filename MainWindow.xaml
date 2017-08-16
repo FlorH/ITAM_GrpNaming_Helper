@@ -31,31 +31,35 @@
         </GroupBox>
 
         <Label x:Name="LB3" Content="AD OU aka CGID" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Width="185"/>
-        <ListBox x:Name="LB_CurrentOUs" HorizontalAlignment="Left" Height="490" Margin="10,260,0,0" VerticalAlignment="Top" Width="185"/>
-        <Button x:Name="Btn_SelectOU" Content="Select OU" HorizontalAlignment="Left" Margin="55,765,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="LB4" Content="Current Groups" HorizontalAlignment="Left" Margin="210,231,0,0" VerticalAlignment="Top" Width="175"/>
-        <ListBox x:Name="LB_CurrentGrps" HorizontalAlignment="Left" Height="200" Margin="210,260,0,0" VerticalAlignment="Top" Width="376"/>
-        <Label x:Name="LB5" Content="Current Members" HorizontalAlignment="Left" Margin="609,231,0,0" VerticalAlignment="Top" Width="120"/>
-        <ListBox x:Name="LB_CurrentGrpMembers" HorizontalAlignment="Left" Height="200" Margin="609,260,0,0" VerticalAlignment="Top" Width="230"/>
+        <ListBox x:Name="LB_CurrentOUs" HorizontalAlignment="Left" Height="475" Margin="10,260,0,0" VerticalAlignment="Top" Width="185"/>
+        <Button x:Name="Btn_SelectOU" Content="Select OU" HorizontalAlignment="Left" Margin="55,750,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="LB4" Content="Current Groups" HorizontalAlignment="Left" Margin="210,216,0,0" VerticalAlignment="Top" Width="175"/>
+        <ListBox x:Name="LB_CurrentGrps" HorizontalAlignment="Left" Height="200" Margin="210,245,0,0" VerticalAlignment="Top" Width="376"/>
+        <Label x:Name="LB5" Content="Current Members" HorizontalAlignment="Left" Margin="600,216,0,0" VerticalAlignment="Top" Width="120"/>
+        <ListBox x:Name="LB_CurrentGrpMembers" HorizontalAlignment="Left" Height="200" Margin="600,245,0,0" VerticalAlignment="Top" Width="239"/>
+        <TextBox x:Name="TB_Prefix" HorizontalAlignment="Left" Height="28" Margin="212,504,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="238" IsReadOnly="True" IsEnabled="False" IsUndoEnabled="False" IsTabStop="False"/>
+        <Button x:Name="Btn_GetMembers" Content="Get Members" HorizontalAlignment="Left" Margin="491,449,0,0" VerticalAlignment="Top" Width="95" Height="30"/>
+        <Button x:Name="Btn_ExportMembers" Content="Export Members" HorizontalAlignment="Left" Margin="724,449,0,0" VerticalAlignment="Top" Width="115" Height="30"/>
 
-        <Button x:Name="Btn_GetMembers" Content="Get Members" HorizontalAlignment="Left" Margin="491,460,0,0" VerticalAlignment="Top" Width="95" Height="30"/>
-        <Button x:Name="Btn_ExportMembers" Content="Export Members" HorizontalAlignment="Left" Margin="724,460,0,0" VerticalAlignment="Top" Width="115" Height="30"/>
-
-        <Label x:Name="LB_6" Content="New Groups for ARMS" HorizontalAlignment="Left" Margin="520,500,0,0" VerticalAlignment="Top" Width="190"/>
-        <ListBox x:Name="LB_NewGrps" HorizontalAlignment="Left" Height="220" Margin="520,530,0,0" VerticalAlignment="Top" Width="320"/>
+        <Label x:Name="LB_6" Content="New Groups for ARMS" HorizontalAlignment="Left" Margin="520,489,0,0" VerticalAlignment="Top" Width="190"/>
+        <ListBox x:Name="LB_NewGrps" HorizontalAlignment="Left" Height="220" Margin="520,515,0,0" VerticalAlignment="Top" Width="320"/>
         <Button x:Name="Btn_RemoveGrp" Content="Remove Grp" HorizontalAlignment="Left" Margin="320,720,0,0" VerticalAlignment="Top" Width="86" Height="30"/>
         <Button x:Name="Btn_ExportGrps" Content="Export Grps" HorizontalAlignment="Left" Margin="425,720,0,0" VerticalAlignment="Top" Width="85" Height="30"/>
 
-        <Label x:Name="LB_7" Content="Prefix for the groups" HorizontalAlignment="Left" Margin="212,480,0,0" VerticalAlignment="Top" Width="238"/>
-        <ListBox x:Name="TB_Prefix" HorizontalAlignment="Left" Height="40" Margin="210,509,0,0" VerticalAlignment="Top" Width="240"/>
-        <Label x:Name="LB_8" Content="New Group Name" HorizontalAlignment="Left" Margin="212,555,0,0" VerticalAlignment="Top" Width="188"/>
-        <TextBox x:Name="TB_NewGrpName" HorizontalAlignment="Left" Height="40" Margin="212,585,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="188"/>
-        <Label x:Name="LB_9" Content="Group Description" HorizontalAlignment="Left" Margin="212,631,0,0" VerticalAlignment="Top" Width="238"/>
-        <TextBox x:Name="TB_NewGrpDesc" HorizontalAlignment="Left" Height="40" Margin="210,660,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="240"/>
+        <Label x:Name="LB_7" Content="Prefix for the groups" HorizontalAlignment="Left" Margin="212,475,0,0" VerticalAlignment="Top" Width="238"/>
+        <Label x:Name="LB_8" Content="New Group Name" HorizontalAlignment="Left" Margin="212,547,0,0" VerticalAlignment="Top" Width="188"/>
+        <TextBox x:Name="TB_NewGrpName" HorizontalAlignment="Left" Height="30" Margin="212,570,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="238"/>
+        <Label x:Name="LB_9" Content="Group Description" HorizontalAlignment="Left" Margin="212,615,0,0" VerticalAlignment="Top" Width="238"/>
+        <TextBox x:Name="TB_NewGrpDesc" HorizontalAlignment="Left" Height="40" Margin="210,640,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="300" HorizontalScrollBarVisibility="Auto"/>
         <Button x:Name="Btn_AddGrp" Content="Add Group" HorizontalAlignment="Left" Margin="212,720,0,0" VerticalAlignment="Top" Width="90" Height="30"/>
 
-        <Button x:Name="Btn_ClearForm" Content="Clear Form" HorizontalAlignment="Left" Margin="744,151,0,0" VerticalAlignment="Top" Width="74" Height="30"/>
-        <Button x:Name="Btn_EXIT" Content="EXIT" HorizontalAlignment="Left" Margin="764,762,0,0" VerticalAlignment="Top" Width="75" Height="30" FontWeight="Bold"/>
-              
+        <Button x:Name="Btn_ClearForm" Content="Clear Form" HorizontalAlignment="Left" Margin="744,151,0,0" VerticalAlignment="Top" Width="75" Height="30"/>
+        <Button x:Name="Btn_EXIT" Content="EXIT" HorizontalAlignment="Left" Margin="764,747,0,0" VerticalAlignment="Top" Width="75" Height="30" FontWeight="Bold"/>
+
+        <Grid x:Name="Grid_StatusBar" HorizontalAlignment="Stretch" Height="25" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="Auto">
+            <ListBox x:Name="LB_StatusBar" HorizontalAlignment="Stretch" Height="25" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="Auto" />
+        </Grid>
+        
+
     </Grid>
 </Window>
